@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        var selector = '.nav li';
+        $(document).ready(function() {
+            $(selector).on('click', function(){
+                $(selector).removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    <div class="nav">
+        <ul>
+            <li class="active">Women</li>
+            <li >Men</li>
+            <li >Girls</li>
+            <li >Boys</li>
+            
+        </ul> 
+        <img src="imag/logo.png" class="logo" alt=""> 
+        <div class="container_search_bar">
+            <form action="" class="search_bar">
+                <input type="text" placeholder="Search">
+                <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
