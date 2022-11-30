@@ -1,32 +1,47 @@
 body {
     text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 .nav {
     padding: 0px;
     margin: 0%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    font-family: 'EB Garamond',serif;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .nav li{
     list-style-type: none;
     display: inline;
     font-size: 20px;
-    font-weight: 700;
+
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 12px;
-    font-family: 'EB Garamond',serif;
     color: rgb(160, 155, 155);
 }
 li.active, .nav li:hover{
     color: black;
+    transition-duration: 0.4s;
 }
 .logo {
     margin: 10px;
 }
+.left_nav{
+    display: flex;
+}
 .container_search_bar{
     margin: 10px;
+    position: relative;
+    vertical-align: bottom;
 }
 .search_bar{
     border-bottom: 1px solid rgb(128, 125, 125);
@@ -38,10 +53,12 @@ li.active, .nav li:hover{
     font-family: 'EB Garamond',serif;
     font-size: 20px;
     width: 80px;
+    transition-duration: 0.4s;
 }
-
 .search_bar input:focus{
     outline: none;
+    width: 363px;
+    transition-duration: 0.4s;
 }
 .search_bar button{
     border: none;
@@ -51,11 +68,8 @@ li.active, .nav li:hover{
     margin-bottom: -6px;
     margin-right: -8px;
     height: 30px;
-    margin-top: 2px;;
-}
-.left_nav{
-    display: flex;
-}
+    margin-top: 2px;
+}   
 .imag_nav{
     margin: 10px;
     height: 35px;
@@ -65,5 +79,19 @@ li.active, .nav li:hover{
 }
 .inactive{
     background-color: rgb(128, 125, 125)!important;
+}
+
+.sub_category {
+    display: flexbox;  
+    justify-content: space-evenly;
+    background-color: rgb(138, 231, 142);
+}
+.sub_category li {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 12px;
+    
+
 }
 
