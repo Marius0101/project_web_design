@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="design.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-</body>
-    <script>
-        
-        $(document).ready(function() {
-            var categry = '.nav li';
-            $(categry).on('click', function(){
-                
-                $(categry).removeClass('active');
-                $(this).addClass('active');
-            })
-            var select_icon = 'imag_nav';
-            $(select_icon).on('mouseover',function(){
-                $(select_icon).addClass('inactive');
-                $(this).removeClass('inactive');
-            })
-            $(select_icon).on('mouseleave',function(){
-                $(select_icon).removeClass('inactive');
-            })
-        });
-    </script>
-
-
-    <div class="nav">
-        <ul>
-            <li class="active">Women</li>
-            <li >Men</li>
-            <li >Girls</li>
-            <li >Boys</li>
+    <head>
+        <link rel="stylesheet" type="text/css" href="design.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
             
-        </ul> 
-        <img src="imag/logo.png" class="logo" alt=""> 
-        <div class="left_nav">
-            <div class="container_search_bar">
-                <form action="" class="search_bar">
-                    <input type="text" placeholder="Search">
-                    <button type="submit"><img src="imag/magnifying_glass.png" class="imag_nav" ></button>
-                </form>
-            </div>
-            <img src="imag/log_in_2.png" class="imag_nav">
-            <img src="imag/favorite.png" class="imag_nav">
-            <img src = "imag/shoping_cart.png" class="imag_nav">
-        </div>
-        
-        
-    </div>
-    <div class="sub_category">
-        <ul>
-            <li class="active">Women</li>
-            <li >Men</li>
-            <li >Girls</li>
-            <li >Boys</li>
-        </ul> 
+            $(document).ready(function() {
+                var categry = '.nav li';
+                $(categry).on('click', function(){
+                    
+                    $(categry).removeClass('active');
+                    $(this).addClass('active');
+                })
+                var select_icon = '.imag_nav';
+                $(select_icon).on('mouseover',function(){
+                    $(select_icon).addClass('inactive');
+                    $(this).removeClass('inactive');
+                })
+                $(select_icon).on('mouseleave',function(){
+                    $(select_icon).removeClass('inactive');
+                })
+                
+            });
+        </script>
+    </head>
 
-    </div>
-</body>
+    </body>
+
+        <div class="nav">
+            <ul>
+                <li class="active">Women</li>
+                <li >Men</li>
+                <li >Girls</li>
+                <li >Boys</li>
+                
+            </ul> 
+
+            <img src="imag/logo.png" class="logo" alt=""> 
+            
+            <div class="left_nav">
+                
+                <div class="container_search_bar">
+                    <form action="" class="search_bar">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><img src="imag/magnifying_glass.png" class="imag_nav" ></button>
+                    </form>
+                </div>
+
+                <img src="imag/log_in_2.png" class="imag_nav">
+                <img src="imag/favorite.png" class="imag_nav">
+                <img src = "imag/shoping_cart.png" class="imag_nav">
+            </div>
+            
+        </div>
+
+        <div class="sub_category">
+
+            <ul>
+                <li class="active">Women</li>
+                <li >Men</li>
+                <li >Girls</li>
+                <li >Boys</li>
+            </ul> 
+
+        </div>
+    </body>
 </html>
