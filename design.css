@@ -5,6 +5,7 @@ body {
     padding: 0px;
     margin: 0%;
     display: flex;
+    justify-content: space-around;
 }
 
 .nav li{
@@ -24,13 +25,45 @@ li.active, .nav li:hover{
 .logo {
     margin: 10px;
 }
+.container_search_bar{
+    margin: 10px;
+}
 .search_bar{
-    border-bottom: 1px solid rgb(100, 100, 100);;
+    border-bottom: 1px solid rgb(128, 125, 125);
 }
 .search_bar input{
     border: none;
+    padding: 4px;
     text-align: left; 
+    font-family: 'EB Garamond',serif;
+    font-size: 20px;
+    width: 80px;
 }
+
 .search_bar input:focus{
     outline: none;
 }
+.search_bar button{
+    border: none;
+    background-color: white;
+}
+.search_bar img{
+    margin-bottom: -6px;
+    margin-right: -8px;
+    height: 30px;
+    margin-top: 2px;;
+}
+.left_nav{
+    display: flex;
+}
+.imag_nav{
+    margin: 10px;
+    height: 35px;
+    background-color: rgb(29, 29, 29);
+    transition-duration: 0.4s;
+    
+}
+.inactive{
+    background-color: rgb(128, 125, 125)!important;
+}
+
