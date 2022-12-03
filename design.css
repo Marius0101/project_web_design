@@ -1,28 +1,32 @@
+*{
+    margin: 0;
+}
 body {
     text-align: center;
-    margin: 0;
     border: 0;
     padding: 0;
+    height: 100%;
+    position: relative;
 }
 .nav {
-    padding: 0px;
     margin: 0%;
     display: flex;
     justify-content: space-evenly;
 }
 li{
     list-style-type: none;
-    display: inline;
     font-family: 'EB Garamond',serif;
     cursor: pointer;
     font-weight: 700;
 }
+.nav ul{
+    margin-top: 15px;
 
+}
 .nav li{
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     font-size: 20px;
-
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 12px;
@@ -34,9 +38,11 @@ li.active, .nav li:hover{
 }
 .logo {
     margin: 10px;
+    height: 55px;
 }
-.left_nav{
+.right_nav{
     display: flex;
+    margin-top: 12px;
 }
 .container_search_bar{
     margin: 10px;
@@ -84,9 +90,10 @@ li.active, .nav li:hover{
 .sub_category {
     display: flexbox;  
     justify-content: space-evenly;
-    background-color: rgb(138, 231, 142);
+    background-color: rgb(42, 43, 43);
 }
 .sub_category li {
+    display: inline;
     color: rgb(255, 255, 255);
     font-size: 20px;
     letter-spacing: 2px;
@@ -94,4 +101,143 @@ li.active, .nav li:hover{
     
 
 }
+footer{
+    background-color: rgb(214, 211, 211);
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    
+    
+}
+.wave {
+    color: #E2F6D6;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.footer-container{
+    padding-top: 200px;
+    display: flex;
+    background-color: rgb(42, 43, 43);
+    justify-content: space-around;
+    align-items: center;
+}
 
+.logo-footer{
+    margin: 10px;
+    height: 100px;
+    
+}
+.Left-footer p{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(121, 111, 111);
+}
+.Social-Media h2{
+    text-shadow: 1px 1px 2px rgb(121, 111, 111);
+}
+.Social-Media img{
+    background-color: #2B2A2A ;
+    height: 50px;
+    margin: 10px;
+}
+.facebook{
+    margin-bottom: -2px;
+    height: 54px !important;
+}
+.facebook:hover{
+    background-color: #3b5b9b ;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    
+}
+.twitter:hover{
+    background-color: #04c4fc;
+}
+.mail-icon:hover{
+    background-color:#bc1888;
+}
+.middle-footer{
+    display: grid;
+    margin-bottom: -70px;
+}
+.middle-footer-name{
+    text-align: left;
+    flex-grow: 4;
+    text-shadow: 1px 1px 2px rgb(121, 111, 111);
+    color: #f9fcf8;
+    
+}
+.footer-links{
+    display: flex;
+}
+    
+.footer-links a{
+    text-decoration: none;
+    color: #f9fcf8;;
+    font-family: 'EB Garamond',serif;
+    padding: 2px;
+    text-shadow: 1px 1px 2px rgb(172, 159, 159);
+
+}
+.footer-links h3{
+    margin-bottom: 15px;
+    color: #f9fcf8;
+    text-shadow: 1px 1px 2px rgb(121, 111, 111);
+}
+.links{
+    display: grid;
+    margin: 30px;
+}
+
+.newsletter{
+    margin-bottom: -50px;
+}
+.newsletter h2{
+    text-shadow: 1px 1px 2px rgb(121, 111, 111);
+}
+
+.newsletter input{
+    margin: 10px;
+    width: 420px;
+    display: block;
+    font-size: 15px;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 25px;
+    border-color: #f9fcf8;
+    background-color: rgb(42, 43, 43);
+    color: #f9fcf8;
+    font-weight: bold;
+}
+.newsletter input::placeholder{
+    color: #f9fcf8;
+    text-shadow: 1px 1px 2px rgb(172, 159, 159);
+
+}
+.newsletter input:focus{
+    outline: none;
+}
+.newsletter button{
+    margin: 10px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    width: 455px;
+    border: none;
+    color: rgb(42, 43, 43);
+    background-color: #f9fcf8;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(255, 246, 246);
+    
+}
+.newsletter button:active{
+    background-color: rgb(42, 43, 43);
+    color: #f9fcf8;;
+    border-style: solid;
+    border-color: 1px rgb(42, 43, 43);
+    text-shadow: none !important;
+}

@@ -6,6 +6,6 @@
 <body>
   <?php include 'header.html';?>
 <!--Remaining section-->
-<p>ana are pere</p>
+  <?php include 'footer.html';?>
 </body>
 </html>
