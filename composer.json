@@ -1,0 +1,15 @@
+{
+    "name": "marius/app",
+    "autoload": {
+        "psr-4": {
+            "app\\":"./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marius0100",
+            "email": "74910584+Marius0100@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

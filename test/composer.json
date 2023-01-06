@@ -1,0 +1,15 @@
+{
+    "name": "mariu/test",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "includes/libraries/Classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marius0100",
+            "email": "74910584+Marius0100@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
